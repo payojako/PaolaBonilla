@@ -1,0 +1,49 @@
+1. FIFO
+Primero en entrar, primero en salir. Es un concepto utilizado en estructura de datos y teoría de colas. 
+LIFO
+Ultimo en entrar es el primero en salir. El término LIFO se utiliza en estructuras de datos y teoria de pilas.
+La diferencia es que FIFO implementa lo que son colas, que tiene que ver con atender procesos donde el primero en llegar es el primero en ser atendido para salir y contuniua con el siguiente. Mientras que en LIFO se ocupan lo que son pilas donde ultimo en entrar es el primero en ser atendido para salir.
+
+2. Tiene dos funciones,funA() y funB(). funA realiza una operación de extraer y luego aplila “E” .funB extrae dos valores de la pila. Qué valores serían extraídos en los siguientes casos? Asuma que para cada punto, la pila es la que se muestra anteriormente
+funA(); funB();
+funA() extrae A y apilla E. 
+Mostrando EBCD
+funB() extrae a E (ultimo en entrar) y a B (penultimo en entrar)
+
+Quedaría CD
+
+
+
+funB(); funA(); 
+funB() extrae a AB, mostrando CD
+funA() extrae c y apila E
+
+Queda ED
+
+
+
+funA(); funA();
+funA() extrae A y apila E.
+siguiente funA() extrae E y apila E
+
+dejando EBCD
+
+
+
+funB(); funB();
+La primera funB() extrae a A y B 
+Queda AB
+
+La segunda funB() extrae C y D.
+La pila se mostraría vacía. 
+
+
+3. De qué número sería desencolado B?
+
+B sería descolado de tercero
+De qué número fue encolado C?
+C sería descolado de segundo
+Se puede garantizar que A fue encolado antes que D?
+No, D entró primero que todos
+Cuál valor fue encolado primero, C o B?
+C
